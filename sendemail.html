@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Email Akshay</title>
+		<meta name="description" content="Send a direct mail to Akshay Gangwar" />
+		<meta name="keywords" content="fullscreen form, akshay, gangwar, engineer, website" />
+		<meta name="author" content="Akshay" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<style type="text/css">
+
+			.resizer{
+				font-size: 1.6em;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<h1>Contact Form</h1>
+						<a class = "resizer codrops-icon codrops-icon-prev" href = "contactme.html"><span>Back to Contact Me</span></a>
+						<a class = "resizer codrops-icon codrops-icon-drop" href = "index.html"><span>Home</span></a>
+				</div>
+				<form action = "sendmail.php" method = "post" id="myform" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q1">What do people call you?</label>
+							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Tyrion Lannister" required/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="No spam. Promise.">Email Address, please?</label>
+							<input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="jonsnow_notatraitor@thewall.com" required/>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="This will help us know what kind of service you need">What are you writing about?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q3b" name="q3" type="radio" value="question"/><label for="q3b" class="radio-question">Query</label></span>
+								<span><input id="q3c" name="q3" type="radio" value="feedback"/><label for="q3c" class="radio-feedback">Feedback</label></span>
+							</div>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" data-info="I don't respond to emails by default">Would you like me to get back to you?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q4b" name="q4" type="radio" value="yes"/><label for="q4b" class="radio-yes">Yes</label></span>
+								<span><input id="q4c" name="q4" type="radio" value="no"/><label for="q4c" class="radio-no">No</label></span>
+							</div>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q5">What do you want to say?</label>
+							<textarea class="fs-anim-lower" id="q5" name="q5" placeholder="Describe here"></textarea>
+						</li>
+
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q6">Pick one</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q6b" name="q6" type="radio" value="crows"/><label for="q6b" class="radio-crows">Crows</label></span>
+								<span><input id="q6c" name="q6" type="radio" value="whitewalkers"/><label for="q6c" class="radio-whitewalkers">Whitewalkers</label></span>
+							</div>
+						</li>
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Send answers</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+
+			<!-- Related demos -->
+			<div class="related">
+				<p>Navigate the site:</p>
+				<a href="index.html">
+					<img src="img/home.png" />
+					<h3>Home</h3>
+				</a>
+				<a href="dgm.html">
+					<img src="img/dgm.png" />
+					<h3>Dark Gray Matter</h3>
+				</a>
+				<a href="atl.html">
+					<img src="img/atl.png" />
+					<h3>Tech &amp; Lifestyle Reviews</h3>
+				</a>
+				<a href="contactme.html">
+					<img src="img/contactme.png" />
+					<h3>Contact Me</h3>
+				</a>
+			</div>
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script src="js/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+		</script>
+	</body>
+</html>
