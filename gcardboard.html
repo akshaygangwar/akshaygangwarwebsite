@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>ATL | Google Cardboard v1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="icon" href="favicon.ico" type="image/x-ico" />
+        <style type="text/css">
+
+            .selected a{
+                color: #D16378;
+            }
+
+            .review{
+                text-align: left;
+                opacity: 1;
+            }
+
+            .short-text {
+                text-decoration: underline;
+                margin-top: 40px;
+            }
+
+            .resizer{
+                height: 200px;
+                width: auto;
+                overflow: hidden;
+                border-radius: 50%;
+                z-index: -1;
+                -moz-transition: all .51s;
+                -o-transition: all .51s;
+                -webkit-transition: all .51s;
+                transition: all .51s;
+            }
+
+            .resizer:hover{
+                height: 250px;
+                width: auto;
+                border-radius: 1em;
+            }
+
+            #top-nav-menu{
+                opacity: 0.2;
+                font-size: 0em;
+                -moz-transition: all .51s;
+                -o-transition: all .51s;
+                -webkit-transition: all .51s;
+                transition: all .51s;
+            }
+
+            #top-nav-menu a{
+                margin-right: 10px;
+            }
+
+            .atl-date{
+                opacity:0.8;
+            }
+
+        </style>
+    </head>
+    <body>
+    <div id="content" class="clearfix">
+
+        <div class="header-container animated fadeIn">
+            <header class="wrapper clearfix">
+            	<a href="#" id="clicker-expose" title="Akshay Gangwar | Tech Enthusiast - New Delhi, India"><img src="img/logo.svg" alt="akshaygangwar.in" border="0" class="wbdlc-logo" id="image-expose" /></a>
+            </header>
+
+            <script type="text/javascript">
+
+                var clicked = 0;
+                document.getElementById("clicker-expose").onclick=function(){
+                    if(clicked==0){
+                        document.getElementById("top-nav-menu").style.opacity="1";
+                        document.getElementById("top-nav-menu").style.fontSize="1em";
+                        clicked=1;
+                    }
+                    else {
+                        document.getElementById("top-nav-menu").style.opacity="0.2";
+                        document.getElementById("top-nav-menu").style.fontSize="0em";
+                        clicked=0;
+                    }
+                };
+
+            </script>
+
+            <footer class="wrapper clearfix" id="top-nav-menu">
+                <a href="index.html">Home</a>
+                <a href="timeline.html">Academic Timeline</a>
+                <a href="dgm.html">Dark Gray Matter</a>
+                <a href="atl.html">Tech &amp; Lifestyle Reviews</a>
+                <a href="contactme.html">Contact Me</a>
+            </footer>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article class="about-me animated fadeIn">
+                    <header>
+                        <h1 class="title">Google Cardboard v1</h1>
+                    </header>
+                    <section>
+                        <p class = "short-text">TL;DR: Virtual Reality experience at the price of a large pizza! Thanks, Google!</p>
+                    </section>
+                   
+                    <footer>
+                        <h5 class = "atl-date">4 September 2015</h5>
+                    </footer>
+                </article>
+
+                <article class = "review">
+
+                    <center><img src="img/atl/gcardboard/gcardboard1.jpg" class="resizer"/></center>
+                    <p>When Google launched it’s Cardboard VR Viewer at their 2014 Google I/O conference, it captured imaginations of users and developers worldwide.</p>
+                    <p>Think about it, a fully functional (well, almost) VR headset, complete with a magnetic trigger at the price of a large pizza! Plus, it can be made at home using the templates provided by Google. It was game changing stuff.</p>
+                    <p>No need for developers to purchase expensive VR headsets so that they could test their VR apps, and no need for people to purchase aforementioned expensive headsets just so that they could experience the power and the excitement of VR.
+                    </p>
+                    <p>You can just download the template, stick it onto some cardboard, cut it out, fold here, paste there, slide in some lenses and viola! You have yourself a functional VR headset.</p>
+                    <p>Now, you may wonder how good can such a product be?</p>
+                    <p>The answer, pretty damn good.</p>
+                    <p>When I first got my hands on the Google Cardboard, I was unsure of what to think about it. Being made of cardboard, it doesn’t really look anything special. But slide in a phone, snap it onto your face and holy mother of VR, it – is – amazing.</p>
+                    <p>Let me tell you something, you can NEVER appreciate VR until you’ve actually tried it. It’s awesome, and Google Cardboard is a great way to experience it first-hand.</p>
+
+                </article>
+                <article>
+
+                    <h3 class ="short-text">Build</h3>
+
+                </article>
+
+                <article class="review">
+
+                    <p>The build quality of a cardboard VR headset depends on, that’s right, the cardboard you used. The sturdier the cardboard is, the sturdier your headset will be.</p>
+                    <p>If you’re not good with DIY stuff/can’t find aspherical lenses or are just too lazy to build one for yourself, you can get assembled Cardboard headsets off amazon for like 350 Rs</p>
+                    <p>I’d recommend <a href="http://www.getcardboard.in" target="_blank" title="Link opens in a new tab">GetCardboard.in</a>
+                    
+                </article>
+
+                <article>
+                    <h3 class ="short-text">Apps</h3>
+                </article>
+
+                <article class="review">
+                    <p>There are some apps that you just have to try once you get your hands on a Cardboard headset.</p>
+                    <p>For one, you need to install the Cardboard app on your phone and check out the features and the included fun videos, 3-D photos that you can pan around in with movements of your head, and a tour of some french palace (I suck at these things :P) which is awesome!
+                    </p>
+                    <p>You just have to try out InMind VR – a fun, albeit short game where you travel inside the brain of a patient aiming your VR reticule at the infected neurons to heal them. It’s fun and it shows the potential of what VR apps can do. It probably doesn’t sound like a lot of fun, but you’ll be left wanting more when the game ends (and it ends pretty quickly.)</p>
+                    <p>There’s this great app called Chair In A Room. It’s a thriller/horror experience best enjoyed with headphones connected because let me tell you, this app will give you goosebumps you can never get from watching any horror movie, EVER</p>
+                    <p>Another app that I tried was Lamper VR – just a simple game (kinda like temple run but without left and right turns, because lets be honest, if you shake your head to the left and right with such speed you’ll get dizzy and honestly, might even end up hurting yourself.) where you use your head to guide the bee through a tunnel of some sort, dodging obstacles along the way. It’s fun, but it gets dizzying after a while.</p>
+                </article>
+
+                <article>
+                    <h3 class ="short-text">Verdict</h3>
+                </article>
+
+                <article class = "review">
+                    <p>There may not be a ton of apps for VR headsets, but Virtual Reality in itself is an experience you must have, and Google Cardboard is a great way to get started.</p>
+                    <p>If you’re a developer, you can head on to Google Developers and get started with developing Apps for VR right NOW!</p>
+                    <p>Virtual Reality has a huge number of applications and great experiences that are just waiting to be created.</p>
+                </article>
+
+            </div>
+        </div>
+
+        <div class="link-container">
+            <div class = "main wrapper clearfix">
+                <article class="about-me animated fadeIn">
+                    <header>
+                        <h3>Explore</h3>
+                    </header>
+                    <section>
+                        <p class = "selected"><a href="index.html" rel = "nofollow">Home</a></p>
+                        <p><a href="timeline.html">Academic Timeline</a></p>
+                        <p><a href="dgm.html" rel="nofollow">Dark Gray Matter</a></p>
+                        <p><a href="atl.html" rel="nofollow">Tech &amp; Lifestyle Reviews</a></p>
+                        <p><a href="contactme.html" rel="nofollow">Contact Me</a></p>
+                    </section>
+                </article>
+            </div>
+        </div>
+        
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h5>akshaygangwar.in</h5>
+            </footer>
+        </div>
+    </div>
+    </body>
+</html>
