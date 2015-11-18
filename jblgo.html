@@ -49,6 +49,19 @@
                 border-radius: 1em;
             }
 
+            #top-nav-menu{
+                opacity: 0.2;
+                font-size: 0em;
+                -moz-transition: all .51s;
+                -o-transition: all .51s;
+                -webkit-transition: all .51s;
+                transition: all .51s;
+            }
+
+            #top-nav-menu a{
+                margin-right: 10px;
+            }
+
             .atl-date{
                 opacity:0.8;
             }
@@ -60,8 +73,35 @@
 
         <div class="header-container animated fadeIn">
             <header class="wrapper clearfix">
-            	<a href="/" title="Akshay Gangwar | Tech Enthusiast - New Delhi, India"><img src="img/logo.svg" alt="akshaygangwar.in" border="0" class="wbdlc-logo" /></a>
+            	<a href="#" id="clicker-expose" title="Akshay Gangwar | Tech Enthusiast - New Delhi, India"><img src="img/logo.svg" alt="akshaygangwar.in" border="0" class="wbdlc-logo" id="image-expose" /></a>
             </header>
+
+            <script type="text/javascript">
+
+                var clicked = 0;
+                document.getElementById("clicker-expose").onclick=function(){
+                    if(clicked==0){
+                        document.getElementById("top-nav-menu").style.opacity="1";
+                        document.getElementById("top-nav-menu").style.fontSize="1em";
+                        clicked=1;
+                    }
+                    else {
+                        document.getElementById("top-nav-menu").style.opacity="0.2";
+                        document.getElementById("top-nav-menu").style.fontSize="0em";
+                        clicked=0;
+                    }
+                };
+
+            </script>
+
+            <footer class="wrapper clearfix" id="top-nav-menu">
+                <a href="index.html">Home</a>
+                <a href="timeline.html">Academic Timeline</a>
+                <a href="dgm.html">Dark Gray Matter</a>
+                <a href="atl.html">Tech &amp; Lifestyle Reviews</a>
+                <a href="contactme.html">Contact Me</a>
+            </footer>
+
         </div>
 
         <div class="main-container">
