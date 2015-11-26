@@ -15,6 +15,10 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="icon" href="favicon.ico" type="image/x-ico" />
+
+        <link rel="stylesheet" type="text/css" href="css/funnyNewsTicker.css"/>
+        <script src="js/jQuery.js"></script>
+
         <style type="text/css">
 
             .selected a{
@@ -89,6 +93,36 @@
             </div>
         </div>
 
+        <div style="width:50%; margin:0 auto; box-sizing:border-box;">
+        <div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing ticker-resize" id="ticker">
+                <ul>
+                    <li>
+                        <div class="fnt-content" data-link="http://akshaygangwar.in">1. Working on the Logitech G402 HyperionFury Review!</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://akshaygangwar.in">2. Practicals start from 28th November. Scared.</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://akshaygangwar.in">3. I'll probably also do a review for my AudioTechnica headphones.</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://akshaygangwar.in">4. And my wallet from shopatplaces</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://akshaygangwar.in">5. This ticker contains snippets of my life.</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://akshaygangwar.in">6. Today was a lazy day.</div>
+                    </li>
+                    <li>
+                        <div class="fnt-content" data-link="http://akshaygangwar.in">7. I did read a bit of Harry Potter, again, though.</div>
+                    </li>
+                </ul>
+                <div class="fnt-top-arrow" style="background-image: url(../img/fnt-arrows-black.png); left: 61.5px; background-position: 50% 0%; background-repeat: no-repeat no-repeat;"></div>
+                <div class="fnt-bottom-arrow" style="background-image: url(../img/fnt-arrows-black.png); left: 61.5px; background-position: 50% 100%; background-repeat: no-repeat no-repeat;"></div>
+            </div>
+        </div>
+
         <div class="link-container">
             <div class = "main wrapper clearfix">
                 <article class="about-me animated fadeIn">
@@ -113,5 +147,10 @@
             </footer>
         </div>
     </div>
+    <script>
+    $(document).ready(function(){   
+        $("#ticker").funnyNewsTicker({width:"80%",timer:2000,titlecolor:"#FFF",itembgcolor:"#1faf6d",infobgcolor:"#1a935c",buttonstyle:"white",bordercolor:"#1a935c"}); 
+    }); 
+</script>
     </body>
 </html>
